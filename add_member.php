@@ -83,7 +83,7 @@
 
                     <div class="col-md-6 col-sm-12 col-xs-12">
                       <div class="form-group">
-                        <label for="marc" class="bmd-label-floating">Marc</label>
+                        <label for="marc" class="bmd-label-floating">Instructor</label>
                         <input type="text" class="form-control" id="marc" value="<?php if(isset($userData))  echo $userData['marc']; ?>">
                       </div>
                     </div>
@@ -157,12 +157,7 @@
                    
                   </div>
 
-                  <div class="col-md-6 col-sm-12 col-xs-12">
-                    
-                      <label for="nextMembership" style="margin:0">Next Membership</label>
-                      <input type="text" id=nextMembership class="form-control yearAheadDate datepicker" value="">
-                    
-                  </div>
+                  
                   <div class="col-md-6 col-sm-12 col-xs-12">
                       <div class="form-group">
                   
@@ -467,7 +462,7 @@
     $("#dateJoined").val("'.$userData['date_joined'].'");
     $("#feko").val("'.$userData['feko'].'");
     $("#renewalDate").val("'.$userData['renewal_date'].'");
-    $("#nextMembership").val("'.$userData['next_membership'].'");
+   
     
     ';
 
@@ -554,7 +549,7 @@ $.post("api/add_member.php",
                 date_joined: $('#dateJoined').val(),
                 feko: $('#feko').val(),
                 renewal_date: $('#renewalDate').val(),
-                next_membership: $('#nextMembership').val(),
+            
                 photos: $('#photos').is(':checked'),
                 grade: $('#grade').val()
                 <?php if(isset($_GET['id'])) echo ',id: '. $_GET['id']; ?>
@@ -570,6 +565,7 @@ $.post("api/add_member.php",
                     ?>
                    
                 }else{
+               
                   $.notify({
                       icon: 'add_alert',
                       <?php 

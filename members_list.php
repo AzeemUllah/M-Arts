@@ -49,7 +49,7 @@
                           <th>Last Name</th>
                           <th>Medication</th>
                           <th  class="none">Address</th>
-                          <th>Marc</th>
+                          <th>Instructor</th>
                           <th>Club Area</th>
                           <th>Email</th>
                           <th>Phone Number</th>
@@ -58,7 +58,7 @@
                           <th class="none">Date Joined</th>
                           <th class="none">Feko</th>
                           <th class="none">Renewal Date</th>
-                          <th class="none">Next Membership</th>
+                         
                           <th class="none">Days left</th>
                           <th class="none">Photos</th>
                           <th class="none">Grade</th>
@@ -102,7 +102,7 @@
                         <td>".$row['date_joined']."</td>
                         <td>".$row['feko']."</td>
                         <td>".$row['renewal_date']."</td>
-                        <td>".$row['next_membership']."</td>
+                       
                         <td>".$row['days_left']."</td>
                         <td>".$row['photos']."</td>
                         <td>".$row['grade']."</td>
